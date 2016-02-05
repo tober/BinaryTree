@@ -191,8 +191,7 @@ describe('BinaryTree', () => {
 			bt.insert(5);
 			bt.isEmpty().should.equal(false);
 
-			bt.remove(5);
-			bt.isEmpty().should.equal(true);
+			
 		});
 	});
 });
