@@ -128,6 +128,7 @@ describe('BinaryTree', () => {
 			bt.insert(11);
 			bt.insert(15);
 			bt.insert(6);
+			
 			bt.insert(20);
 			bt.insert(7);
 
@@ -170,6 +171,7 @@ describe('BinaryTree', () => {
 			bt.insert(11);
 			bt.insert(15);
 			bt.insert(6);
+			
 			bt.insert(20);
 			bt.insert(7);
 
@@ -188,10 +190,11 @@ describe('BinaryTree', () => {
 			var bt = new BinaryTree();
 			bt.isEmpty().should.equal(true);
 
-			bt.insert(5);
+			bt.insert(8);
 			bt.isEmpty().should.equal(false);
 
-			
+			bt.remove(8);
+			bt.isEmpty().should.equal(true);
 		});
 	});
 });
